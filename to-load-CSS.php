@@ -14,3 +14,12 @@ add_action('wp_enqueue_scripts', function() {
     );
 
 });
+
+// Same with functions
+function mystyle(){
+wp_enqueue_style(
+  'theme-style',
+  get_template_directory_uri() . '/custom.css'  
+);
+}
+add_action('wp_enqueue_scripts','mystyle');
