@@ -1,11 +1,12 @@
-add_action('wp_enqueue_scripts', function () {
-
+<?php
+function myscript() {
     wp_enqueue_script(
-        'theme-js',
-        get_template_directory_uri() . '/assets/js/main.js',
-        ['jquery'], // dependency → ensures jQuery loads first
+        'my-js',
+        get_template_directory_uri() . '/my.js',
+        array('jquery'),
         null,
         true
     );
-
-});
+}
+add_action('wp_enqueue_scripts', 'myscript');
+?>
