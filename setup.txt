@@ -1,0 +1,6 @@
+1)style.css (for theme name and other details)
+2)header.php 
+3)footer.php
+4)index.php (use get_header() to fetch header and get_footer() to fetch footer)
+5)functions.php
+6)screenshot.png(any image for theme)
